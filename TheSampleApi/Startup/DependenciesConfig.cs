@@ -8,7 +8,11 @@ namespace TheSampleApi.Startup
         {
             builder.Services.AddOpenApiServices();
             builder.Services.AddCorsServices();
+            builder.Services.AddAllHealthChecks();
             builder.Services.AddTransient<CourseData>();
         }
+
+
+
     }
 }
