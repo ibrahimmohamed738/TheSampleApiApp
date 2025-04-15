@@ -6,7 +6,8 @@ namespace TheSampleApi.Startup
     {
         public static void AddDependencies(this WebApplicationBuilder builder)
         {
-            builder.Services.AddOpernApiServices();
+            builder.Services.AddOpenApiServices();
+            builder.Services.AddCorsServices();
             builder.Services.AddTransient<CourseData>();
         }
     }
