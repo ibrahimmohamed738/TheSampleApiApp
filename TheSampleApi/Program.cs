@@ -12,6 +12,7 @@ app.UseOpenApi();
 app.UseHttpsRedirection();
 
 app.AddRootEndPoints();
+app.AddCourseEndPoints();
 
 app.Run();
 
